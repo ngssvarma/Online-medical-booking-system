@@ -1,0 +1,80 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin_Admin" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>SmartPhone WEB</title>
+    <link rel="stylesheet" type="text/css" href="Admin.css">
+    <style type="text/css">
+        .style1
+        {
+            font-size: large;
+        }
+        .style3
+        {
+            font-size: large;
+            color: #003399;
+        }
+
+    </style>
+</head>
+<body>
+    <table style="width: 100%; height: 100%" border="0" align="center" 
+        cellpadding="0" cellspacing="0">
+            <tr height ="59px">
+            <td>
+            <table style="width: 100%; height: 100%" cellpadding="0" cellspacing="0">
+            <tr height ="59px">
+                <td style="width: 20%;height:59px; border-bottom-style: solid; border-bottom-width: 6px; border-bottom-color: #83A595; background-color: #84E0E8;" 
+                    valign="bottom" >
+                    <img src ="images/logo1.gif" />
+                    
+                    </td>
+                <td align="center" 
+                                    style="height:59px; border-bottom-style: solid; border-bottom-width: 6px; border-bottom-color: #83A595; background-color: #FF3399;">
+                    <span class="style1" 
+                        style="font-family: Times; mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: EN-GB; mso-fareast-language: EN-GB; mso-bidi-language: AR-SA">O</span><span class="style1" lang="EN-GB" 
+                        style="font-family: Times; mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: EN-GB; mso-fareast-language: EN-GB; mso-bidi-language: AR-SA">nline </span>
+                    <span class="style1" 
+                        style="font-family: Times; mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: EN-GB; mso-fareast-language: EN-GB; mso-bidi-language: AR-SA">M</span><span class="style1" lang="EN-GB" 
+                        style="font-family: Times; mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: EN-GB; mso-fareast-language: EN-GB; mso-bidi-language: AR-SA">edical </span>
+                    <span class="style1" 
+                        style="font-family: Times; mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: EN-GB; mso-fareast-language: EN-GB; mso-bidi-language: AR-SA">B</span><span class="style1" lang="EN-GB" 
+                        style="font-family: Times; mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: EN-GB; mso-fareast-language: EN-GB; mso-bidi-language: AR-SA">ooking </span>
+                    <span class="style1" 
+                        style="font-family: Times; mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: EN-GB; mso-fareast-language: EN-GB; mso-bidi-language: AR-SA">S</span><span class="style1" lang="EN-GB" 
+                        style="font-family: Times; mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: EN-GB; mso-fareast-language: EN-GB; mso-bidi-language: AR-SA">ystem</span>
+                </td>
+                <td style="width: 30%;height:59px; border-bottom-style: solid; border-bottom-width: 6px; border-bottom-color: #83A595; background-color: #A3E2F5;" align="right" id="tdStatus" runat="server">
+                    Login as : <asp:Label ID="lblUsername" runat="server" Text="Label"></asp:Label>
+                    <br />
+                    Last visited on : <asp:Label ID="lblLastAccess" runat="server" Text="Label"></asp:Label>
+                </td>
+            </tr>
+            </table>
+            </td>
+            </tr>            
+            <tr style="height:25px" id="trmenu">
+        <td bgcolor="#C2FEDC" 
+                    
+                    
+                    style="border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #5A7C6C">
+            <span id="menuAdmin" runat="server">
+            <a href="Default.aspx">Home</a> | <a href="Doctor.aspx">Doctor</a> | <a href="Patient.aspx"> Patients</a> |<a href="appointment.aspx"> Appointment</a> |<a href="changepassword.aspx"> Change Password</a> |<a href="Logout.aspx"> Logout</a>
+        </span>
+        </td></tr>
+    <tr>
+        <td valign="top">
+        <br />
+        <br />
+         <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder> 
+        </td>
+    </tr>
+    <tr>
+        <td valign="middle" align="center" height="30" 
+            style="background-color: #D8F3E9; border-top-style: solid; border-top-width: 2px; border-top-color: #4B7041">
+            <b>Online Medical Booking System</b> </td>
+    </tr>
+</table>
+</body>
+</html>
