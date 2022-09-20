@@ -1,0 +1,10 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [Id]
+      ,[Date]
+      ,[Time]
+      ,[Doc_id]
+      ,[Pat_id]
+      ,[Status]
+      ,[Doc_remarks]
+      ,[Doc_entry_time]
+  FROM [OnlineAppointment].[dbo].[Appointment]
